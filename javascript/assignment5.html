@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .div{
+        height: 400px;
+        width: 400px;
+        border: 2px solid ;
+    }
+    .nav{
+        display: flex;
+    }
+    .app{
+        height: 300px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;   
+    }
+</style>
+<body>
+    
+    <div class="container">
+        <div class="div">
+            <div class="nav">
+                <div class="logo"> <img src="https://media.licdn.com/dms/image/v2/C510BAQGHhq9X-H8LyQ/company-logo_200_200/company-logo_200_200/0/1631345366169?e=2147483647&v=beta&t=8hq7Hhr_Vlu6uIXpTU9yv31n6jB0_zBzvuFqHmHGwlg" alt="" style="object-fit: cover; height: 100px;"></td>
+                </div>
+                <h1>COUNTER APP</h1>
+            </div>
+            
+                <div class="app">
+                    <div id="div1">+</div>
+                    <div id="div2"><p id="p">0</p></div>
+                    <div id="div3">-</div>
+                </div>
+
+        </div>
+    </div>
+
+    <script>
+        const plus = document.querySelector('#div1')
+        const minus = document.querySelector('#div3')
+        const p = document.querySelector("#p")
+        var  count = 0 ;
+     
+
+        plus.addEventListener('click',()=>{
+           if(count === 10){
+                    alert('max limit')
+            }
+            p.innerHTML = count++;
+            
+        })
+        minus.addEventListener("click",()=>{
+             if(count === -1){
+                    alert('min limit')
+            }
+            p.innerHTML = count--;
+            
+        })
+
+    </script>
+</body>
+</html>
