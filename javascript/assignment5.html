@@ -7,7 +7,6 @@
 </head>
 <style>
     .container{
-        height: 100vh;
         width: 100%;
         display: flex;
         align-items: center;
@@ -57,14 +56,22 @@
                 </div>
                 <div id="hide">hide</div>
         </div>
+        <div class="div">
+            <div ><img id="one" src="https://media.licdn.com/dms/image/v2/C510BAQGHhq9X-H8LyQ/company-logo_200_200/company-logo_200_200/0/1631345366169?e=2147483647&v=beta&t=8hq7Hhr_Vlu6uIXpTU9yv31n6jB0_zBzvuFqHmHGwlg" alt=""></div>
+            <div id="change">change</div>
+
     </div>
 
+    </div>
+    
     <script>
         const plus = document.querySelector('#div1')
         const minus = document.querySelector('#div3')
         const p = document.querySelector("#p")
         const hide = document.getElementById("hide");
          const img = document.getElementById("img");
+         const one = document.getElementById("one");
+           const change = document.getElementById("change");
         var  count = 0 ;
      
 
@@ -84,6 +91,9 @@
         })
             hide.addEventListener('click',()=>{
                     img.style.opacity ="0"
+            })
+              change.addEventListener('click',()=>{
+                    one.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXD3fx-zOcsGmgFIgBFL1LMxMc0Yh3Uowwcw&s"
             })
     </script>
 </body>
